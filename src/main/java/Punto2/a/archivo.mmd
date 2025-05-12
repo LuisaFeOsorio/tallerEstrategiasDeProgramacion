@@ -1,0 +1,8 @@
+flowchart TD
+    A[Inicio] --> B[Ordenar objetos por ratio valor/peso]
+    B --> C[Inicializar mochila vacía]
+    C --> D{Capacidad restante?}
+D -->|Sí| E[Tomar objeto con mayor ratio]
+E --> F[Agregar fracción posible a mochila]
+F --> D
+D -->|No| G[Fin]
