@@ -3,6 +3,8 @@ package Punto3;
 public class SucesionLucas {
 
     // Método con programación dinámica por tabulación
+
+    //Complejidad =   O(n)
     public static int lucasTabulacion(int n) {
         if (n == 0) return 2;
         if (n == 1) return 1;
@@ -19,6 +21,8 @@ public class SucesionLucas {
     }
 
     // Método con programación dinámica por memorización
+
+    //Complejidad =   O(n)
     public static int lucasMemorizacion(int n, int[] memoria) {
         if (n == 0) return 2;
         if (n == 1) return 1;
